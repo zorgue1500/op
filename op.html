@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Operações básicas</h1>
+        <p>N1:</p>
+        <input type="number" id="n1">
+        <p>N2:</p>
+        <input type="number" id="n2">
+        <button onclick="resultado()">Resultados</button>
+        <p>Soma: <span id="som"></span></p>
+        <p>Subtração: <span id="sub"></span></p>
+        <p>Multiplicação: <span id="mult"></span></p>
+        <p>Divisão: <span id="div"></span></p>
+
+        <script>
+            var n1 = document.querySelector('#n1')
+            var n2 = document.querySelector('#n2')
+            var soma = document.querySelector('#som')
+            var subtraca = document.querySelector('#sub')
+            var multiplica = document.querySelector('#mult')
+            var divisao = document.querySelector('#div')
+
+            function resultado(){
+
+                    soma.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+                    subtraca.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+                    multiplica.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+                    divisao.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+
+            }
+        </script>
+
+    
+</body>
+</html>
